@@ -78,6 +78,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 60%;
 }
 
 .form textarea {
@@ -173,6 +174,7 @@ a:hover {
     font-size: 18px;
     line-height: 20px;
     color: #6070ff;
+    font-family: 'Ephesis', cursive;
   }
 
   .burger {
@@ -406,32 +408,12 @@ a:hover {
     border-bottom: 1px solid #dfe1e6;
   }
 
-  .languages ul {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 113.85px;
-    padding: 0;
-    gap: 12px;
-  }
-
   .language-title {
     justify-content: space-between;
   }
 
   .language-item p {
     padding-left: 16px;
-  }
-
-  .languages ul li {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000;
-    display: flex;
-    list-style-type: none;
-    width: auto;
-    padding: 9px;
-    align-items: center;
   }
 
   .language-item {
@@ -619,7 +601,7 @@ a:hover {
   }
 
   .project-meta {
-    width: 297px;
+    width: 100%;
     gap: 12px;
     justify-content: left;
     flex-direction: row !important;
@@ -661,20 +643,16 @@ a:hover {
 
   .about-myself ul {
     margin-bottom: 2vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding-inline-start: 0;
   }
 
   .languages {
-    margin-left: 0;
-  }
-
-  .languages ul ul {
-    flex-direction: row;
-  }
-
-  .languages ul ul li {
-    flex-direction: column;
-    width: 7.625rem;
-    height: auto;
+    margin-block-start: 1rem;
+    min-width: 40%;
   }
 
   .form {
@@ -775,4 +753,45 @@ a:hover {
   100% {
     transform: translateX(0);
   }
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.panel {
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion::after {
+  content: '+';
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+
+input:checked+.accordion::after {
+  content: '-';
+  right: 14px;
+  top: 3px;
 }
