@@ -653,6 +653,9 @@ a:hover {
   .languages {
     margin-block-start: 1rem;
     min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .form {
