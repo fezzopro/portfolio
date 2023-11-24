@@ -4,6 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectArray = [
     {
       id: 1,
+      title: 'React Dashboard',
+      projectMeta: ['SELF-EMPLOYED', 'Front End Dev', '2023'],
+      projectImage: {
+        desktop: 'assets/images/projects/dashboard-big-web.png',
+        smallDevice: 'assets/images/projects/dashboard-big.png',
+        modelImage: 'assets/images/projects/dashboard-big.png',
+      },
+      projectDescription: "React Admin Dashboard. This application was built using using React, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, 4 different Charts, 3 different Data Table Pages, FAQ Page, Form Page, and Calendar Integration",
+      projectStacks: ['React', 'React Pro SideBar', 'MaterialUI', 'Nivo Charts'],
+      liveLink: 'https://react-admin-dashboard-mu-five.vercel.app/',
+      sourceLink: 'https://github.com/fezzopro/react-admin-dashboard',
+    },
+    {
+      id: 2,
       title: 'To-Do List',
       projectMeta: ['Microverse', 'Full Stack Dev', '2023'],
       projectImage: {
@@ -17,60 +31,46 @@ document.addEventListener('DOMContentLoaded', () => {
       sourceLink: 'https://github.com/fezzopro/todo-list',
     },
     {
-      id: 2,
-      title: 'Tonic',
-      projectMeta: ['CANOPY', 'Back End Dev', '2015'],
-      projectImage: {
-        desktop: 'assets/images/Svg/project1.svg',
-        smallDevice: 'assets/images/project1.png',
-        modelImage: 'assets/images/Svg/project1.svg',
-      },
-      projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      projectStacks: ['html', 'css', 'javascript'],
-      liveLink: 'https://fezzopro.github.io/portfolio-mobile-first/',
-      sourceLink: 'https://github.com/fezzopro/portfolio-mobile-first',
-    },
-    {
       id: 3,
-      title: 'Multi-Post Stories',
-      projectMeta: ['FACEBOOK', 'Back End Dev', '2015'],
+      title: 'TV Shows',
+      projectMeta: ['MICROVERSE', 'Full Stack Dev', '2023'],
       projectImage: {
-        desktop: 'assets/images/Svg/project2.svg',
-        smallDevice: 'assets/images/project2.png',
-        modelImage: 'assets/images/Svg/project2.svg',
+        desktop: 'assets/images/projects/tv-shows-web.png',
+        smallDevice: 'assets/images/projects/tv-shows-big.png',
+        modelImage: 'assets/images/projects/tv-shows-big.png',
       },
-      projectDescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-      projectStacks: ['html', 'Ruby on rails', 'css', 'javascript'],
-      liveLink: 'https://fezzopro.github.io/portfolio-mobile-first/',
-      sourceLink: 'https://github.com/fezzopro/portfolio-mobile-first',
+      projectDescription: 'A website displaying movies, comments, likes & reservations. This project displays TV Shows from the TV- Maze API.It also allows you to add likes, comments, and reservations to each movie using the Involvement API.All data is preserved thanks to the external TV - Maze API service.',
+      projectStacks: ['html', 'css', 'javascript', 'API', 'web-pack'],
+      liveLink: 'https://waelelsafty07.github.io/JavaScript-capstone-project/dist/',
+      sourceLink: 'https://github.com/waelelsafty07/JavaScript-capstone-project',
     },
     {
       id: 4,
-      title: 'Facebook 360',
-      projectMeta: ['FACEBOOK', 'Back End Dev', '2015'],
+      title: 'Home Finance Tracker',
+      projectMeta: ['Microverse', 'Full Stack Dev', '2023'],
       projectImage: {
-        desktop: 'assets/images/Svg/project3.svg',
-        smallDevice: 'assets/images/project3.png',
-        modelImage: 'assets/images/Svg/project3.svg',
+        desktop: 'assets/images/projects/home-finance-web.png',
+        smallDevice: 'assets/images/projects/home-finance.png',
+        modelImage: 'assets/images/projects/home-finance.png',
       },
-      projectDescription: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-      projectStacks: ['html', 'Ruby on rails', 'css', 'javascript'],
-      liveLink: 'https://fezzopro.github.io/portfolio-mobile-first/',
-      sourceLink: 'https://github.com/fezzopro/portfolio-mobile-first',
+      projectDescription: 'Introducing "HomeFin Tracker," a user-friendly mobile application designed to revolutionize your home finance management. With HomeFin Tracker, effortlessly monitor and control your household expenses, track savings goals, and gain insights into your financial habits. This intuitive app provides real-time updates on your spending patterns, allowing you to set budgets, categorize expenditures.',
+      projectStacks: ['React', 'Ruby on rails', 'css', 'javascript'],
+      liveLink: 'https://home-budget-tracker.onrender.com/',
+      sourceLink: 'https://github.com/fezzopro/Budget-app',
     },
     {
       id: 5,
-      title: 'Uber Navigation',
-      projectMeta: ['Uber', 'Lead Developer', '2015'],
+      title: 'Car Rental',
+      projectMeta: ['Microverse', 'Full Stack Dev', '2023'],
       projectImage: {
-        desktop: 'assets/images/Svg/project4.svg',
-        smallDevice: 'assets/images/project4.png',
-        modelImage: 'assets/images/Svg/project4.svg',
+        desktop: 'assets/images/projects/car-rental.png',
+        smallDevice: 'assets/images/projects/car-rental.png',
+        modelImage: 'assets/images/projects/car-rental.png',
       },
-      projectDescription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      projectDescription: 'Car Rental is a web application that allows users to add, rent, and reserve vehicles. It is built using React as a Front-end library along with redux and Ruby On Rails at the backend for building the APIs together with the PostgreSQL database.',
       projectStacks: ['html', 'Ruby on rails', 'css', 'javascript'],
-      liveLink: 'https://fezzopro.github.io/portfolio-mobile-first/',
-      sourceLink: 'https://github.com/fezzopro/portfolio-mobile-first',
+      liveLink: 'https://vehicle-company.onrender.com/',
+      sourceLink: 'https://github.com/tumainimaganiko/front-end-capstone-group',
     },
   ];
 
@@ -205,14 +205,20 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.model-technologies').removeChild(stack);
       });
     }
-    // codes to create model goes here
+    // codes to Populate model goes here
     const project = document.activeElement.id.split('-')[1];
     const modelProjectTitle = document.querySelector('.model-project-header h2');
+    const modelProjectCompany = document.querySelector('.project-meta-model > .company');
+    const modelProjectRole = document.querySelector('.project-meta-model > .role');
+    const modelProjectYear = document.querySelector('.project-meta-model > .year')
     const modelProjectDescr = document.querySelector('.model-project-description');
     const modelProjectImage = document.querySelector('.model-image');
     const modeButtons = document.querySelectorAll('.model-buttons a');
     modelProjectTitle.textContent = projectArray[project - 1].title;
     modelProjectDescr.textContent = projectArray[project - 1].projectDescription;
+    modelProjectCompany.textContent = projectArray[project - 1].projectMeta[0];
+    modelProjectRole.textContent = projectArray[project - 1].projectMeta[1];
+    modelProjectYear.textContent = projectArray[project - 1].projectMeta[2];
     modelProjectImage.src = projectArray[project - 1].projectImage.modelImage;
     modeButtons[0].href = projectArray[project - 1].liveLink;
     modeButtons[1].href = projectArray[project - 1].sourceLink;
