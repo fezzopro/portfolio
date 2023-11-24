@@ -790,7 +790,7 @@ a:hover {
   top: 2px;
 }
 
-input:checked+.accordion::after {
+input:checked + .accordion::after {
   content: '-';
   right: 14px;
   top: 3px;
