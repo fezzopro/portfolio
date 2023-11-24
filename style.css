@@ -795,3 +795,7 @@ input:checked + .accordion::after {
   right: 14px;
   top: 3px;
 }
+
+.social-icon-group {
+  display: flex !important;
+}
