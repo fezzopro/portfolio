@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         smallDevice: 'assets/images/projects/dashboard-big.png',
         modelImage: 'assets/images/projects/dashboard-big.png',
       },
-      projectDescription: "React Admin Dashboard. This application was built using using React, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, 4 different Charts, 3 different Data Table Pages, FAQ Page, Form Page, and Calendar Integration",
+      projectDescription: 'React Admin Dashboard. This application was built using using React, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, 4 different Charts, 3 different Data Table Pages, FAQ Page, Form Page, and Calendar Integration',
       projectStacks: ['React', 'React Pro SideBar', 'MaterialUI', 'Nivo Charts'],
       liveLink: 'https://react-admin-dashboard-mu-five.vercel.app/',
       sourceLink: 'https://github.com/fezzopro/react-admin-dashboard',
@@ -210,15 +210,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const modelProjectTitle = document.querySelector('.model-project-header h2');
     const modelProjectCompany = document.querySelector('.project-meta-model > .company');
     const modelProjectRole = document.querySelector('.project-meta-model > .role');
-    const modelProjectYear = document.querySelector('.project-meta-model > .year')
+    const modelProjectYear = document.querySelector('.project-meta-model > .year');
     const modelProjectDescr = document.querySelector('.model-project-description');
     const modelProjectImage = document.querySelector('.model-image');
     const modeButtons = document.querySelectorAll('.model-buttons a');
     modelProjectTitle.textContent = projectArray[project - 1].title;
     modelProjectDescr.textContent = projectArray[project - 1].projectDescription;
-    modelProjectCompany.textContent = projectArray[project - 1].projectMeta[0];
-    modelProjectRole.textContent = projectArray[project - 1].projectMeta[1];
-    modelProjectYear.textContent = projectArray[project - 1].projectMeta[2];
+    modelProjectCompany.textContent = projectArray[project - 1].projectMeta[0]; /* eslint-disable-line */
+    modelProjectRole.textContent = projectArray[project - 1].projectMeta[1]; /* eslint-disable-line */
+    modelProjectYear.textContent = projectArray[project - 1].projectMeta[2]; /* eslint-disable-line */
     modelProjectImage.src = projectArray[project - 1].projectImage.modelImage;
     modeButtons[0].href = projectArray[project - 1].liveLink;
     modeButtons[1].href = projectArray[project - 1].sourceLink;
