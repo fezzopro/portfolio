@@ -3,7 +3,6 @@ body {
   font-family: sans-serif, "Poppins";
   position: relative;
   margin: 0;
-  min-width: fit-content; /* stylelint-disable-line */
 }
 
 a {
@@ -78,7 +77,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 60%;
 }
 
 .form textarea {
@@ -239,7 +237,7 @@ a:hover {
     height: 20px;
     padding-left: 0%;
     align-items: baseline;
-    margin: 0 0 10vh 0;
+    /* margin: 0 0 10vh 0; */
   }
 
   .social-icon {
@@ -396,8 +394,12 @@ a:hover {
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
-    margin-top: 114px;
+    /* margin-top: 114px; */
     margin-bottom: initial;
+  }
+
+  .panel > ul {
+    padding-inline-start: 0;
   }
 
   .margin-bottom-0 {
@@ -504,7 +506,7 @@ a:hover {
     width: 90%;
   }
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 375px) {
   .top-toolbar {
     height: 60px;
     align-items: center;
@@ -862,7 +864,22 @@ a:hover {
 
 @media only screen and (max-width: 425px) {
   .social-media-connect-icons {
-    margin: 0.5vh 0 19vh 0;
+    /* margin: 0.5vh 0 19vh 0; */
+  }
+
+  .languages {
+    margin-block-start: 1rem;
+    /* min-width: 40%; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .panel > ul {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0;
   }
 
   .headline {
@@ -881,6 +898,9 @@ a:hover {
 
 /* Desktop version */
 @media only screen and (min-width: 768px) {
+  .about-myself-intro {
+      width: 60%;
+    }
   .headline {
     background-image: url('assets/images/Svg/Header_bg@2x.svg');
     background-size: contain;
@@ -1062,6 +1082,22 @@ a:hover {
   }
 }
 
+/* Tablets version */
+@media screen and (max-width: 884px) {
+  .about-myself,
+  .headline {
+    padding: 0 2rem 5rem;
+  }
+
+  .contact-me {
+    margin-top: 0;
+  }
+
+  .introduction{
+    height: auto;
+  }
+}
+
 /* Animation and translation */
 .logo:hover {
   transform: scale(1.5);
@@ -1124,6 +1160,7 @@ a:hover {
   outline: none;
   font-size: 15px;
   transition: 0.4s;
+  display: flex;
 }
 
 .active,
@@ -1143,12 +1180,11 @@ a:hover {
   content: '+';
   font-size: 22px;
   font-weight: bold;
-  position: absolute;
   right: 10px;
   top: 2px;
 }
 
-input:checked + .accordion::after {
+.active::after {
   content: '-';
   right: 14px;
   top: 3px;
