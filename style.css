@@ -237,7 +237,6 @@ a:hover {
     height: 20px;
     padding-left: 0%;
     align-items: baseline;
-    /* margin: 0 0 10vh 0; */
   }
 
   .social-icon {
@@ -246,11 +245,12 @@ a:hover {
 
   .work {
     display: grid;
-    padding: 0 24px;
+    padding: 0 5px;
+    max-width: 90%;
   }
 
   .card {
-    margin-top: 114px;
+    margin-top: 30px;
     background-color: #ffff;
     display: flex;
     flex-direction: column;
@@ -262,6 +262,16 @@ a:hover {
 
   .card img {
     padding: 16px 16px 0 16px;
+    max-width: 100%;
+    max-height: 30%;
+  }
+
+  .model-project {
+    max-width: 90%;
+  }
+
+  .model-images > img {
+    max-height: 100%;
   }
 
   .details {
@@ -394,7 +404,6 @@ a:hover {
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
-    /* margin-top: 114px; */
     margin-bottom: initial;
   }
 
@@ -494,7 +503,7 @@ a:hover {
     padding-right: 0;
   }
 
-  .model-buttons>a>button {
+  .model-buttons > a > button {
     padding: 0 6px;
   }
 
@@ -506,6 +515,7 @@ a:hover {
     width: 90%;
   }
 }
+
 @media only screen and (min-width: 375px) {
   .top-toolbar {
     height: 60px;
@@ -605,11 +615,12 @@ a:hover {
 
   .work {
     display: grid;
-    padding: 0 24px;
+    padding: 0 5px;
+    max-width: 90%;
   }
 
   .card {
-    margin-top: 114px;
+    margin-top: 30px;
     background-color: #ffff;
     display: flex;
     flex-direction: column;
@@ -621,6 +632,16 @@ a:hover {
 
   .card img {
     padding: 16px 16px 0 16px;
+    max-width: 100%;
+    max-height: 30%;
+  }
+
+  .model-project {
+    max-width: 90%;
+  }
+
+  .model-images > img {
+    max-height: 100%;
   }
 
   .details {
@@ -849,7 +870,7 @@ a:hover {
     padding-right: 0;
   }
 
-  .model-buttons>a>button {
+  .model-buttons > a > button {
     padding: 0 6px;
   }
 
@@ -869,7 +890,6 @@ a:hover {
 
   .languages {
     margin-block-start: 1rem;
-    /* min-width: 40%; */
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -898,9 +918,19 @@ a:hover {
 
 /* Desktop version */
 @media only screen and (min-width: 768px) {
+  .card img {
+    max-width: 50%;
+    min-height: 80%;
+  }
+
+  .model-images > img {
+    max-width: 100%;
+  }
+
   .about-myself-intro {
-      width: 60%;
-    }
+    width: 60%;
+  }
+
   .headline {
     background-image: url('assets/images/Svg/Header_bg@2x.svg');
     background-size: contain;
@@ -1093,8 +1123,13 @@ a:hover {
     margin-top: 0;
   }
 
-  .introduction{
+  .introduction {
     height: auto;
+  }
+
+  .card-img {
+    max-width: 50%;
+    min-height: 80%;
   }
 }
 
