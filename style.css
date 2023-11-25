@@ -1228,3 +1228,10 @@ a:hover {
 .social-icon-group {
   display: flex !important;
 }
+
+.headline-greeting {
+  font-family: sans-serif, math;
+  font-size: 2rem;
+  line-height: 0.1rem;
+  font-stretch: semi-condensed;
+}
