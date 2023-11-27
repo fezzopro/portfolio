@@ -213,12 +213,10 @@ a:hover {
   }
 
   .introduction {
-    height: 146px;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     color: #344563;
-    margin-bottom: 3rem;
   }
 
   .lets-connect {
@@ -245,7 +243,7 @@ a:hover {
 
   .work {
     display: grid;
-    padding: 0 5px;
+    padding: 0 5%;
     max-width: 90%;
   }
 
@@ -582,12 +580,10 @@ a:hover {
   }
 
   .introduction {
-    height: 146px;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     color: #344563;
-    margin-bottom: 3rem;
   }
 
   .lets-connect {
@@ -615,7 +611,7 @@ a:hover {
 
   .work {
     display: grid;
-    padding: 0 5px;
+    padding: 0 5%;
     max-width: 90%;
   }
 
