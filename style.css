@@ -255,7 +255,7 @@ a:hover {
     gap: 12px;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    padding-bottom: 14px;
+    height: fit-content; /* stylelint-disable-line */
   }
 
   .card img {
@@ -333,6 +333,7 @@ a:hover {
     gap: 8px;
     list-style-type: none;
     padding-left: initial;
+    flex-wrap: wrap;
   }
 
   .stacks li {
@@ -602,7 +603,6 @@ a:hover {
     height: 20px;
     padding-left: 0%;
     align-items: baseline;
-    margin: 0 0 10vh 0;
   }
 
   .social-icon {
@@ -623,7 +623,7 @@ a:hover {
     gap: 12px;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    padding-bottom: 14px;
+    height: fit-content; /* stylelint-disable-line */
   }
 
   .card img {
@@ -701,6 +701,7 @@ a:hover {
     gap: 8px;
     list-style-type: none;
     padding-left: initial;
+    flex-wrap: wrap;
   }
 
   .stacks li {
