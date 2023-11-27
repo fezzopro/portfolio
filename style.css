@@ -255,7 +255,7 @@ a:hover {
     gap: 12px;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    padding-bottom: 14px;
+    height: fit-content;
   }
 
   .card img {
@@ -333,6 +333,7 @@ a:hover {
     gap: 8px;
     list-style-type: none;
     padding-left: initial;
+    flex-wrap: wrap;
   }
 
   .stacks li {
@@ -623,7 +624,7 @@ a:hover {
     gap: 12px;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    padding-bottom: 14px;
+    height: fit-content;
   }
 
   .card img {
@@ -701,6 +702,7 @@ a:hover {
     gap: 8px;
     list-style-type: none;
     padding-left: initial;
+    flex-wrap: wrap;
   }
 
   .stacks li {
