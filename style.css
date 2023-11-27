@@ -255,7 +255,7 @@ a:hover {
     gap: 12px;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    height: fit-content;
+    height: fit-content; /* stylelint-disable-line */
   }
 
   .card img {
@@ -623,7 +623,7 @@ a:hover {
     gap: 12px;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    height: fit-content;
+    height: fit-content; /* stylelint-disable-line */
   }
 
   .card img {
