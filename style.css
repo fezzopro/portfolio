@@ -881,10 +881,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 425px) {
-  .social-media-connect-icons {
-    /* margin: 0.5vh 0 19vh 0; */
-  }
-
   .languages {
     margin-block-start: 1rem;
     display: flex;
